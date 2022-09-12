@@ -150,7 +150,7 @@ main {
   body {
     width: auto;
     font-family: "Poppins", sans-serif;
-    background-image: url('../assets/interior.jpg');
+    background-image: url('./assets/interior.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -255,6 +255,155 @@ main {
     position: absolute;
     top: 39rem;
     left: 6rem;
+  }
+  .card-light .line {
+    display: none;
+  }
+  .card-puzzle .line {
+    display: none;
+  }
+
+  .icon-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5rem;
+    background: rgba(255, 255, 255, 0.513);
+  }
+
+  .desc {
+    position: relative;
+    margin-right: 1rem;
+    bottom: 0;
+    font-weight: 400;
+  }
+
+  .card-puzzle .line {
+    position: absolute;
+    bottom: -67px;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../assets/interior.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: #00000054;
+    background-blend-mode: darken;
+    overflow: hidden;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .nav-logo {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 30px;
+    line-height: 1.1;
+  }
+
+  .nav-links {
+    position: relative;
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+    font-weight: 500;
+  }
+
+  .nav-links::after {
+    position: absolute;
+    bottom: -25px;
+    right: -1px;
+    content: "";
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+
+  .nav-links li:last-child {
+    position: relative;
+    margin-left: 40px;
+  }
+  .phone-svg svg {
+    position: absolute;
+    width: 160%;
+    left: -252px;
+    top: -35px;
+  }
+  .phone-svg svg path {
+    fill: #fff;
+  }
+
+  main {
+    margin: 1rem;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 1.2;
+    width: auto;
+    margin: 0;
+  }
+
+  .btn-learn-more {
+    margin: 2rem;
+
+    padding: 1rem 1.5rem;
+
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5rem;
+
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .card {
+    width: 200px;
+    height: 100px;
+    padding: 1rem;
+    background: #cecece84;
+    position: absolute;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 5px #0000004c;
+  }
+
+  .card-puzzle {
+    position: absolute;
+    top: 25rem;
+    left: 8.5rem;
+  }
+
+  .card-light {
+    position: absolute;
+    top: 34rem;
+    left: 8.5rem;
   }
   .card-light .line {
     display: none;
