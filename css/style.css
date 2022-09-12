@@ -150,7 +150,7 @@ main {
   body {
     width: auto;
     font-family: "Poppins", sans-serif;
-    background-image: url('./assets/interior.jpg');
+    background-image: url('../assets/interior.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
